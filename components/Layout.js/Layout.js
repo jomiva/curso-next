@@ -1,12 +1,20 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
+
+// import styles from "./layout.module.css";
 
 const Layout = ({ children }) => {
   return (
     <div>
       <Navbar />
       {children}
-      <footer>este es un footer</footer>
+      <footer className="container">este es un footer</footer>
+
+      <style jsx>{`
+        .container {
+          background: salmon;
+        }
+      `}</style>
     </div>
   );
 };

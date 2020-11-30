@@ -1,10 +1,13 @@
 import Layout from "../components/Layout.js/Layout";
+// import "../style.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <div className="container">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </div>
   );
 }
 
